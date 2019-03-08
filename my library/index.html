@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CRUD - Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/business-casual.css">
+	
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   <div class="container">
+
+    <div class="row">
+
+
+<div class="main">
+  <h1 id="h1">Library</h1>
+</div>
+
+<div class="col-md-12">
+
+  <form class="form-horizontal"  method="post">
+     <fieldset>
+
+
+      <!-- Form Name -->
+      <legend> My Library</legend>
+        <!-- Text input-->
+  <div class="form-group">
+          <label class="col-md-4 control-label "for="Book Title ">Book Title </label>
+          <div class="col-md-4">
+            <input id="title" class="form-control input-md" type="text" name="book title" placeholder="Enter Book Title">
+      <span class="help-block"> Your book name</span>
+          </div>
+    </div>
+    <div class="form-group">
+          <label class="col-md-4 control-label "for="Author Name ">Author: </label>
+          <div class="col-md-4">
+            <input id="author" class="form-control input-md" type="text" name="book title" placeholder="Enter Author Name">
+      <span class="help-block"> Your book's Author</span>
+          </div>
+      </div >
+      <div class="form-group">
+          <label class="col-md-4 control-label "for="Pages"> Pages: </label>
+          <div class="col-md-4">
+            <input id="pages" class="form-control input-md" type="text" name="Page no" placeholder="Enter Total Pages">
+      <span class="help-block"> Pages Number</span>
+          </div>
+        </div >
+      <div class="form-group">
+          <label class="col-md-4 control-label "for="Year"> year: </label>
+          <div class="col-md-4">
+            <input id="year" class="form-control input-md" type="text" name="Page no" placeholder="Publishing year">
+      <span class="help-block"> </span>
+          </div>
+      </div >
+
+      <!-- Button -->
+        </fieldset>
+ </form>
+  <div class="form-group">
+     <label class="col-md4 control-label"for="btn-submit"></label>
+   <div class="col-md-4" id="submitupdate">
+      <button id="btn-submit" class="btn btn-success" type="button" name="btn-submit" onclick="addBookToLibrary">submit</button>
+    </div>
+ </div>
+
+</div>
+<!-- LIST -->
+<div class="col-md-12">
+     <legend>List of Books</legend>
+
+     <table class="table table-bordered table condensed table-hover">
+      <thead>
+        <tr>
+          <td>Title</td>
+            <td>Author</td>
+              <td>Pages</td>
+                <td>Year</td>
+                  <td>Action</td>
+        </tr>
+      </thead>
+
+      <tbody id=form-list-library-body>
+
+      </tbody>
+     </table>
+
+</div>
+  <br>
+ <!-- view -->
+ </div>
+</div>
+    <script>
+
+     </script>
+</body>
+</html>
